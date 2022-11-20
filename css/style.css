@@ -1,0 +1,174 @@
+
+.block{
+    margin: 30px;
+    width:200px;
+height:200px;
+background: red;
+transition-duration: 5s;
+}
+
+.block:hover{
+    width: 200px;
+height:300px;
+background-color: blue;
+}
+
+.block-2{
+    margin: 30px;
+    width:200px;
+    height:200px;
+opacity:0
+
+}
+
+.block-2:hover{
+    width:200px;
+    height:200px;
+opacity: 1;
+background-color: green;
+}
+
+.block-3{
+    margin: 30px;
+    width:200px;
+    height:200px;
+background-color: aqua;
+transition-property: width;
+}
+
+.block-3:hover{
+    width:300px;
+    height:300px;
+background-color: blue;
+transition-duration: 5s;
+}
+
+.block-4{
+    margin: 30px;
+    width:200px;
+    height:200px;
+background-color: aqua;
+transition-delay: 3s,3s;
+}
+
+.block-4:hover{
+    width:300px;
+    height:300px;
+
+background-color: green;
+transition-duration: 5s;
+}
+
+.background{
+    max-width: 1200px;
+    margin:0 auto;
+    background-image: url("../img/road.jpg") ;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+	position: relative;
+}
+
+.car{
+  padding-top: 300px;
+    animation-name: car;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+position: relative;
+animation-direction: alternate;
+}
+
+@keyframes car {
+0% {
+transform: translate(0,0);
+}
+100%{
+    transform: translate(500px,0);
+}
+
+}
+
+.car__1{
+	height: 100px;
+	width: 200px;
+background-color: red;
+position: relative;
+left:100px;
+
+}
+
+
+
+.car__2{
+	height: 100px;
+	width: 400px;
+background-color: red;
+position: relative;
+text-align: center;
+}
+
+.car__3{
+    height: 80px;
+     width: 80px;
+ background-color: blueviolet;
+ position: relative;
+ bottom:180px;
+ left:200px;
+ }
+ 
+ .car__4{
+    height: 80px;
+     width: 80px;
+ background-color: blueviolet;
+ position: relative;
+ left:110px;
+ bottom:260px;
+}
+
+
+.wheel{
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+animation-name: circle;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+position: relative;
+bottom:250px;
+}
+
+@keyframes circle {
+0% {
+transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+
+
+}
+
+.wheel-2{
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+animation-name: circle;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+position: relative;
+bottom:250px;
+}
+
+@keyframes circle {
+0% {
+transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+
+
+}
